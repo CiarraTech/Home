@@ -32,14 +32,14 @@ body {
   flex-direction: column;
 }
 .title {
-         font-family: 'Raleway Dots', cursive;
-
-  height: 60px;
+   height: 60px;
   border-bottom: 1px solid #E1E8EE;
   padding: 20px 30px;
   color: #5E6977;
   font-size: 22px;
   font-weight: 400;
+             font-family: 'Raleway Dots', cursive;
+
 }
  
 .item {
