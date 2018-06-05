@@ -12,7 +12,7 @@
 	</head>
 <h1 class="heading"><center>Pets R Us  <img src="paw.png" alt="" width="100" height="80"/></center></h1>
 
-<div class="shopping-cart"> 
+	<div class="shopping-cart">
       <!-- Title -->
       <div class="title">
         Shopping Cart
@@ -144,8 +144,14 @@
       $('.like-btn').on('click', function() {
         $(this).toggleClass('is-active');
       });
-	var items = {name:"Cats",price:"100",Quanity:"12"};
-	   document.getElementByClassName("item").innerHTML= items["name"]; 
+	var items = [
+	"Cats"
+	"Dogs"
+	"Fish"
+		];
+		
+	   document.getElementByClassName("item").innerHTML= items["cats"]; 
+	    
 	    
     </script>
   </body>
