@@ -5,6 +5,7 @@ head {
 }
 * {
   box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
 }
  
 html,
