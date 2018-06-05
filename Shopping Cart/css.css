@@ -18,6 +18,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
 .shopping-cart {
     
   width: 750px;
@@ -31,7 +32,7 @@ body {
   flex-direction: column;
 }
 .title {
-    font-family: 'Raleway Dots', cursive;
+   font-family: 'Raleway Dots', cursive;
   height: 60px;
   border-bottom: 1px solid #E1E8EE;
   padding: 20px 30px;
