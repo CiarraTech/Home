@@ -5,9 +5,11 @@ head {
 }
 * {
   box-sizing: border-box;
-    font-family: 'Kaushan Script', cursive;
+    
 }
- 
+ .h1{
+     font-family: 'Kaushan Script', cursive;
+}
 html,
 body {
   width: 100%;
