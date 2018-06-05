@@ -1,6 +1,6 @@
 body {
     background-color: #ffcc99;
-}
+
 
 head {
 }
@@ -13,8 +13,8 @@ head {
 }
 html,
 body {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   background-color: #ffcc99;
   margin: 0;
   font-family: 'Shadows Into Light', cursive;
