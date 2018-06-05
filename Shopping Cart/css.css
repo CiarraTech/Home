@@ -33,7 +33,7 @@ body {
   flex-direction: column;
 }
 .title {
-   height: 60px;
+   height: 80px;
   border-bottom: 1px solid #E1E8EE;
   padding: 20px 30px;
   color: #5E6977;
