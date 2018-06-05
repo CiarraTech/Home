@@ -8,10 +8,8 @@
     <meta name="robots" content="noindex,follow" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css.css">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	</head>
-<h1 class="heading"><center>Pets R Us</center></h1>
- <img src="paw.png" alt="" width="100" height="80">
+<h1><center>Pets R Us</center></h1>
 	<div class="shopping-cart">
       <!-- Title -->
       <div class="title">
@@ -97,7 +95,7 @@
 
         <div class="quantity">
           <button class="plus-btn" type="button" name="button">
-            <img src="plus.png" alt="plus" />
+            <img src="plus.png" alt="" />
           </button>
           <input type="text" name="name" value="1">
           <button class="minus-btn" type="button" name="button">
@@ -144,6 +142,8 @@
       $('.like-btn').on('click', function() {
         $(this).toggleClass('is-active');
       });
+	var items = {name:"Cats",price:"100",Quanity:"12"};
+	   document.getElementById("item").innerHTML= items["name"]; 
     </script>
   </body>
 </html>
