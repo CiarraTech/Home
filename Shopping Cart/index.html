@@ -144,8 +144,13 @@
       $('.like-btn').on('click', function() {
         $(this).toggleClass('is-active');
       });
-	var itemss= ["name","price","quanity" ]; 
-	    	document.ElementById("cat").innerHTML= itemss;
+	simpleCart.add({name: "Sticker",price: 1});
+simpleCart.add({name: "Button",price: 1});
+var items = [];
+simpleCart.each(function( item , x ){
+    items.push( item.name );
+});
+console.log( items ); 
 	    
 	    
     </script>
