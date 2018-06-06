@@ -21,7 +21,7 @@
       <!-- Product #1 -->
       <div class="item">
         <div class="buttons">
-          <span class="delete-btn"></span>
+          <span ="delete-btn"></span>
           <span class="like-btn"></span>
         </div>
 
@@ -30,7 +30,7 @@
 	       </div>
 
         <div class="description">
-          <span id ="cat">Cats </span>
+          <span>Cats </span>
           <span>Adults/Kittens</span>
           <span>All kinds</span>
         </div>
@@ -39,8 +39,8 @@
           <button class="plus-btn" type="button" name="button">
             <img src="plus.png" alt="" />
           </button>
-          <input type="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button">
+          <input id ="text" name="name" value="1">
+          <button onclick ="minus-btn" type="button" name="button">
             <img src="minus.png" alt="" />
           </button>
         </div>
@@ -60,16 +60,16 @@
         </div>
 
         <div class="description">
-          <span id="fish">Aquatics</span>
+          <span>Aquatics</span>
           <span>All kinds</span>
           <span>Ocean Fish</span>
         </div>
 
         <div class="quantity">
-          <button class="plus-btn" type="button" name="button">
+          <button onclick="plus-btn" type="button" name="button">
             <img src="plus.png" alt="" />
           </button>
-          <input type="text" name="name" value="1">
+          <input id ="pqty" type = "number" name="name" value="1">
           <button class="minus-btn" type="button" name="button">
             <img src="minus.png" alt="" />
           </button>
@@ -80,9 +80,10 @@
 
       <!-- Product #3 -->
       <div class="item">
+	      input id="product" type= "text">
         <div class="buttons">
-          <span class="delete-btn"></span>
-          <span class="like-btn"></span>
+          <span class="delete-btn"> remove</span>
+          <span class="like-btn">add</span>
         </div>
 
         <div class="image">
@@ -90,7 +91,7 @@
         </div>
 
         <div class="description">
-          <span id = "dog">Dogs</span>
+          <span>Dogs</span>
           <span>Adults/Puppies</span>
           <span>Different Shapes and Sizes</span>
         </div>
@@ -99,7 +100,7 @@
           <button class="plus-btn" type="button" name="button">
             <img src="plus.png" alt="" />
           </button>
-          <input type="text" name="name" value="1">
+          <input id ="pqty"  type="number" name="name" value="1">
           <button class="minus-btn" type="button" name="button">
             <img src="minus.png" alt="" />
           </button>
@@ -144,7 +145,12 @@
       $('.like-btn').on('click', function() {
         $(this).toggleClass('is-active');
       });
-	
+	    knames=[]
+	    kprice=[]
+	    kquantity
+	function addtoCart(){
+	knames.push(document.ElementById
+	}
 	    
 	    
     </script>
