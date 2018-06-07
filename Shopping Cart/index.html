@@ -45,7 +45,7 @@
           </button>
         </div>
 
-        <div class="total-price">80</div>
+        <div class="total-price">$25</div>
       </div>
 
       <!-- Product #2 -->
@@ -75,7 +75,7 @@
           </button>
         </div>
 
-        <div class="total-price">90</div>
+        <div class="total-price">$45</div>
 		</div>
 <!--Product 3-->
 	  <div class="item">
@@ -104,7 +104,7 @@
           </button>
         </div>
 
-        <div class="total-price">100</div>
+        <div class="total-price">$25</div>
       </div>
 </div>
 
@@ -155,10 +155,21 @@
 		kprice.push(parseInt(document.getElementById("price3").value))
 		displayCart()
 	}
-
-	    
-	    
-	    
+		
+		
+	    alert("Thank you for using Pets R US");
+	  
+	   //Change the Price 
+	   function Change(){
+  		var cha = document.getElementById("cprice");
+ 		 cha.innerHTML = "$17";
+}
+	
     </script>
+    <!-- Change the price -->
+     <button onclick="Change()">Change Price</button>
+     
+     
+     <p id="cprice">25</p>
   </body>
 </html>
