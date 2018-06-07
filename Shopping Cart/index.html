@@ -31,6 +31,7 @@
 
         <div class="description">
           <span id ="cat">Cats</span>
+	  <input id="kitt" type= "text">
           <span>Adults/Kittens</span>
           <span>All kinds</span>
         </div>
@@ -63,6 +64,7 @@
 
         <div class="description">
           <span id="fish">Aquatic</span>
+	<input id="product" type= "text">
           <span>All kinds</span>
           <span>Ocean Fish</span>
         </div>
@@ -95,6 +97,7 @@
 
         <div class="description">
           <span id="dog">Dogs</span>
+	  <input id="pup" type= "text">
           <span>Adults/Puppies</span>
           <span>Different Shapes and Sizes</span>
         </div>
@@ -112,6 +115,28 @@
         <div class="total-price">
 		<input id = "price3" type="number">
 	      </div>
+	       <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">90.57</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
       </div>
     </div>
 
@@ -162,7 +187,9 @@
 		kprice.push(parseInt(document.getElementById("price3").value))
 		displayCart()
 	}
+	function displayCart()
 	    
+	    cartData=
 	    
     </script>
   </body>
