@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light" rel="stylesheet">
 	</head>
+
 <h1 class="heading"><center>Pets R Us  <img src="paw.png" alt="" width="100" height="80"/></center></h1>
 
 	<div class="shopping-cart">
@@ -18,7 +19,8 @@
 	      <h1> Shopping Cart </h1>
       </div>
 
-      <!-- Product #1 -->
+
+<!-- Product #1 -----------------CATS------------------------------>
       <div class="item">
         <div class="buttons">
           <span class ="delete-btn"></span>
@@ -40,18 +42,18 @@
             <img src="plus.png" alt="" />
           </button>
           <input type="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button" onclick="Change()>
+          <button class="minus-btn" type="button" name="button" onclick="Change()">
             <img src="minus.png" alt="" />
              
           </button>
         </div>
  
-        <!--var ctotalprice(25);  -->
-
         <div class="total-price">$80</div>
       </div>
 
-      <!-- Product #2 -->
+
+
+<!-- Product #2 --------FISH------------------------------->
       <div class="item">
         <div class="buttons">
           <span class="delete-btn"></span>
@@ -80,7 +82,9 @@
 
         <div class="total-price">$45</div>
 		</div>
-<!--Product 3-->
+		
+		
+<!--Product 3 --------------------DOGS------------------------------>
 	  <div class="item">
         <div class="buttons">
           <span class ="delete-btn"></span>
@@ -127,6 +131,8 @@
 </div>
 
     <script type="text/javascript">
+    
+//------------ Java Script Section ----------------------------------------------------
       $('.minus-btn').on('click', function(e) {
     		e.preventDefault();
     		var $this = $(this);
@@ -183,10 +189,6 @@
  		 cha.innerHTML = "$17";
 }
 	
-	    
-	    
-	    
-
     </script>
   </body>
 </html>
