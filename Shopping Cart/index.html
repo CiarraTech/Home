@@ -38,19 +38,19 @@
         </div>
 
         <div class="quantity">
-          <button class="plus-btn" type="button" name="button">
+          <button class="plus-btn" type="button" name="button" onclick="cChangea()">
             <img src="plus.png" alt="" />
           </button>
           <input type="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button" onclick="Change()">
+          <button class="minus-btn" type="button" name="button" onclick="cChangem()">
             <img src="minus.png" alt="" />
              
           </button>
         </div>
  
-        <div class="total-price">$80</div>
+        <div class="total-price" id="cprice" type="number">25</div>
+        
       </div>
-
 
 
 <!-- Product #2 --------FISH------------------------------->
@@ -71,16 +71,16 @@
         </div>
 
         <div class="quantity">
-          <button class="plus-btn" type="button" name="button">
+          <button class="plus-btn" type="button" name="button" onclick="cChangea()">
             <img src="plus.png" alt="" />
           </button>
           <input type ="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button">
+          <button class="minus-btn" type="button" name="button" onclick="fChangem()">
             <img src="minus.png" alt="" />
           </button>
         </div>
 
-        <div class="total-price">$45</div>
+        <div class="total-price" id="fprice">45</div>
 		</div>
 		
 		
@@ -102,18 +102,20 @@
         </div>
 
         <div class="quantity">
-          <button class="plus-btn" type="button" name="button">
+          <button class="plus-btn" type="button" name="button" onclick="cChangea()">
             <img src="plus.png" alt="" />
           </button>
           <input type="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button">
+          <button class="minus-btn" type="button" name="button" onclick="dChangem()">
             <img src="minus.png" alt="" />
           </button>
         </div>
 
-        <div class="total-price">$25</div>
+        <div class="total-price" id="dprice" type="number">25</div>
       </div>
-		 <!-- Product #4 -->
+
+
+<!-- Product #4 ----------CHECKOUT---------------->
       <div class="checkout">
         
 
@@ -138,7 +140,7 @@
     		var $this = $(this);
     		var $input = $this.closest('div').find('input');
     		var value = parseInt($input.val());
-
+				
     		if (value > 1) {
     			value = value - 1;
     		} else {
@@ -162,6 +164,12 @@
     		}
 
     		$input.val(value);
+    		
+    		 if (cha.innerHTML > 1) {
+   			cha.innerHTML = cha.innerHTML - 1;
+    		} else {
+    			cha.innerHTML = 0;
+    		}
     	});
 
       $('.like-btn').on('click', function() {
@@ -184,11 +192,72 @@
 	   // alert("Thank you for using Pets R US");
 	  
 	   //Change the Price 
-	   function Change(){
+	   function cChangem(){
   		var cha = document.getElementById("cprice");
- 		 cha.innerHTML = "$17";
+ 		var cat = 25; 
+		
+		 if (cha.innerHTML > cat) {
+    			cha.innerHTML = cha.innerHTML - cat;
+    		} else {
+    			cha.innerHTML = 0;
+    		}
 }
-	
+
+function fChangem(){
+  		var cha = document.getElementById("fprice");
+ 		var fish = 10; 
+		
+		 if (cha.innerHTML > fish) {
+    			cha.innerHTML = cha.innerHTML - fish;
+    		} else {
+    			cha.innerHTML = 0;
+    		}
+}
+
+function dChangem(){
+  		var cha = document.getElementById("dprice");
+ 		var dog = 25; 
+		
+		 if (cha.innerHTML > dog) {
+    			cha.innerHTML = cha.innerHTML - dog;
+    		} else {
+    			cha.innerHTML = 0;
+    		}
+}
+
+ //Change the Price 
+	   function cChangea(){
+  		var cha = document.getElementById("cprice");
+ 		var cat = 25; 
+		
+		 if (cha.innerHTML >= cat) {
+    			cha.innerHTML = cha.innerHTML + cat;
+    		} else {
+    			cha.innerHTML = 0;
+    		}
+}
+
+function fChangea(){
+  		var cha = document.getElementById("fprice");
+ 		var fish = 10; 
+		
+		 if (cha.innerHTML >= fish) {
+    			cha.innerHTML = cha.innerHTML + fish;
+    		} else {
+    			cha.innerHTML = 0;
+    		}
+}
+
+function dChangea(){
+  		var cha = document.getElementById("dprice");
+ 		var dog = 25; 
+		
+		 if (cha.innerHTML >= dog) {
+    			cha.innerHTML = cha.innerHTML + dog;
+    		} else {
+    			cha.innerHTML = 0;
+    		}
+}			
     </script>
   </body>
   
