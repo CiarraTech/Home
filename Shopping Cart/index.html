@@ -41,7 +41,7 @@
           <button class="plus-btn" type="button" name="button" onclick="cChangea()">
             <img src="plus.png" alt="" />
           </button>
-          <input type="text" name="name" value="1">
+          <input type="number" name="name" value="1">
           <button class="minus-btn" type="button" name="button" onclick="cChangem()">
             <img src="minus.png" alt="" />
              
@@ -71,10 +71,10 @@
         </div>
 
         <div class="quantity">
-          <button class="plus-btn" type="button" name="button" onclick="cChangea()">
+          <button class="plus-btn" type="button" name="button" onclick="fChangea()">
             <img src="plus.png" alt="" />
           </button>
-          <input type ="text" name="name" value="1">
+          <input type ="number" name="name" value="1">
           <button class="minus-btn" type="button" name="button" onclick="fChangem()">
             <img src="minus.png" alt="" />
           </button>
@@ -102,10 +102,10 @@
         </div>
 
         <div class="quantity">
-          <button class="plus-btn" type="button" name="button" onclick="cChangea()">
+          <button class="plus-btn" type="button" name="button" onclick="dChangea()">
             <img src="plus.png" alt="" />
           </button>
-          <input type="text" name="name" value="1">
+          <input type="number" name="name" value="1">
           <button class="minus-btn" type="button" name="button" onclick="dChangem()">
             <img src="minus.png" alt="" />
           </button>
@@ -165,19 +165,18 @@
 
     		$input.val(value);
     		
-    		 if (cha.innerHTML > 1) {
-   			cha.innerHTML = cha.innerHTML - 1;
-    		} else {
-    			cha.innerHTML = 0;
-    		}
     	});
 
       $('.like-btn').on('click', function() {
         $(this).toggleClass('is-active');
       });
+      
+      
 	    knames=[]
 	    kprice=[]
 	    kquantity=[]
+	    
+	    
 	function addtoCart(){
 		knames.push(document.ElementById("kitt").value)
 		kprice.push(parseInt(document.ElementById("price1").value))
@@ -226,36 +225,39 @@ function dChangem(){
 }
 
  //Change the Price 
-	   function cChangea(){
-  		var cha = document.getElementById("cprice");
+function cChangea(){
+  		var ma = document.getElementById("cprice");
+  		ma.setAttribute("type", "number");
  		var cat = 25; 
 		
-		 if (cha.innerHTML >= cat) {
-    			cha.innerHTML = cha.innerHTML + cat;
+		 if (ma.innerHTML >= cat) {
+    			ma.innerHTML = cat + parseInt(ma.innerHTML);
     		} else {
-    			cha.innerHTML = 0;
+    			ma.innerHTML = 0;
     		}
-}
+}			
 
 function fChangea(){
-  		var cha = document.getElementById("fprice");
+  		var ma = document.getElementById("fprice");
+  		ma.setAttribute("type", "number");
  		var fish = 10; 
 		
-		 if (cha.innerHTML >= fish) {
-    			cha.innerHTML = cha.innerHTML + fish;
+		 if (ma.innerHTML >= fish) {
+    			ma.innerHTML = fish + parseInt(ma.innerHTML);
     		} else {
-    			cha.innerHTML = 0;
+    			ma.innerHTML = 0;
     		}
-}
+}			
 
 function dChangea(){
-  		var cha = document.getElementById("dprice");
+  		var ma = document.getElementById("dprice");
+  		ma.setAttribute("type", "number");
  		var dog = 25; 
 		
-		 if (cha.innerHTML >= dog) {
-    			cha.innerHTML = cha.innerHTML + dog;
+		 if (ma.innerHTML >= dog) {
+    			ma.innerHTML = dog + parseInt(ma.innerHTML);
     		} else {
-    			cha.innerHTML = 0;
+    			ma.innerHTML = 0;
     		}
 }			
     </script>
