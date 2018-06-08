@@ -171,28 +171,45 @@
       $('.like-btn').on('click', function() {
         $(this).toggleClass('is-active');
       });
-      
-      
-	    knames=[]
-	    kprice=[]
-	    kquantity=[]
 	    
 	    
 	function addtoCart(){
 		knames.push(document.ElementById("kitt").value)
-		kprice.push(parseInt(document.ElementById("price1").value))
-		knames.push(parseInt(document.getElementById("product").value))
-		kprice.push(parseInt(document.getElementById("price2").value))
+		kprice.push(parseInt(document.ElementById("cprice").value))
+		knames.push(parseInt(document.getElementById("fprice").value))
+		kprice.push(parseInt(document.getElementById("dprice").value))
 		knames.push(parseInt(document.getElementById("pup").value))
 		kprice.push(parseInt(document.getElementById("price3").value))
 		displayCart()
 	}
 		
-		
-	   // alert("Thank you for using Pets R US");
 	   
 	   window.alert("Welcome to Shopping Cart!");
 	   window.alert("If you let an item reach 0 it will be removed from the Shopping Cart!");
+	   
+	   //Objects
+	   var animals = {};
+	   
+animals.cat = {
+  name: "Cats",
+  price: "25",
+  quantity: "1",
+};
+
+animals.fish = {
+  name: "Fish",
+  price: "10",
+  quantity: "1",
+};
+
+animals.dog = {
+  name: "Dogs",
+  price: "25",
+  quantity: "1",
+};
+
+list(animals);
+
 	  
 	   //Change the Price 
 	   function cChangem(){
