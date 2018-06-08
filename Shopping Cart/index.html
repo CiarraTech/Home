@@ -126,7 +126,7 @@
 	  </span><div class="total-price" id="dprice" type="number">25</div>
       </div>
 		  <span><h3> Total </h3></span>
-		 <span> <button onclick="myFunction()"><h3> Checkout </h3>
+		 <span> <button onclick="Cart()"><h3> Checkout </h3>
 			 </button></span>
         </div>
       </div>
@@ -286,6 +286,16 @@ function dChangea(){
     		}
 }	
 
+
+function Cart(){
+	 if (confirm("Are you sure you want to checkout?")) {
+    window.alert("Great!");
+    displayCart();
+    
+} else {
+    window.alert("Okay! Take your time.");
+}
+}
 if (cha.innerHTML = 0)	{
 window.alert("This item is removed!");
 }	
