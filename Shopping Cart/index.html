@@ -122,7 +122,8 @@
 
        <div class="subtotal" id="total"> 
 	  <span><h3> Subtotal </h3> 
-	  </span><div class="total-price" id="dprice" type="number">25</div>
+	  <p id="sub"> 25 </p>
+	  </span>
 		  <span><h3> Total </h3></span>
 		 <span> <button onclick="Cart()"><h3> Checkout </h3>
 			 </button></span>
@@ -210,6 +211,15 @@ animals.dog = {
 
 list(animals);
 
+//Change the SubTotal
+	   function Changesub(){
+  		var total = document.getElementById("sub"); 
+		
+		total = document.getElementById("cprice") + document.getElementById("dprice");
+		total();
+		window.alert("total");
+}
+
 	  
 	   //Change the Price 
 	   function cChangem(){
@@ -289,7 +299,10 @@ function dChangea(){
 function Cart(){
 	 if (confirm("Are you sure you want to checkout?")) {
     window.alert("Great!");
-    displayCart();
+    window.alert(document.getElementById("sub").innerHTML);
+    //window.alert(document.body.innerHTML);
+    
+    
     
 } else {
     window.alert("Okay! Take your time.");
